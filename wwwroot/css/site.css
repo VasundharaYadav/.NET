@@ -1,0 +1,89 @@
+/* Reset defaults and set a modern font with a soft background */
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f1f5; /* Softer light pink */
+    color: #4a3f4a; /* Soft dark purple-gray for text */
+    line-height: 1.6;
+    animation: fadeIn 1.2s ease-in-out; /* Smoother fade-in */
+}
+
+/* Fade-in animation for the page */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Navigation bar with deep plum */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #3b2a3d; /* Deep plum for a rich, dark tone */
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    overflow: hidden;
+    position: sticky; /* Sticky nav */
+    top: 0;
+    z-index: 1000;
+}
+
+nav li {
+    float: left;
+    transition: all 0.3s ease; /* Smooth transition for layout changes */
+}
+
+nav a {
+    display: block;
+    color: #f9f1f5; /* Light pink text for contrast */
+    text-align: center;
+    padding: 16px 24px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    nav a:hover {
+        background-color: #5c3e60; /* Lighter plum on hover */
+        transform: translateY(-2px); /* Slight lift */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    }
+
+/* Main content container */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: #ffffff; /* White card background */
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.06); /* Softer shadow */
+    animation: slideUp 0.9s ease-out; /* Refined slide-up */
+    border: 1px solid #e8d5b9; /* Creamy beige border */
+}
+
+/* Slide-up animation for container */
+@keyframes slideUp {
+    from {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Headings with aesthetic colors */
+h1 {
+    color: #a8d5ba; /* Soft mint green */
+    font-size: 2.6em;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #e8d5b9; /* Creamy beige underline */
+    padding-bottom: 12px;
+    transition: colo

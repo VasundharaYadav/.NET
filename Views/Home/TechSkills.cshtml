@@ -1,0 +1,21 @@
+﻿@model PortfolioWebsite.Models.PortfolioModel
+
+<h1>Technical Skills</h1>
+
+@if (Model?.TechSkills != null && Model.TechSkills.Count > 0)
+{
+    @foreach (var category in Model.TechSkills)
+    {
+        <h2>@category.Key</h2>
+        <ul>
+            @foreach (var skill in category.Value)
+            {
+                <li>@skill</li>
+            }
+        </ul>
+    }
+}
+else
+{
+    <p>No technical skills available at this time.</p>
+}
